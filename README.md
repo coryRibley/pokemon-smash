@@ -1,0 +1,18 @@
+# Pokemon Smash
+#### Video Demo:  https://youtu.be/kmRFLxMVdE0
+### Overview:
+Pokemon Smash is a mini-game that simulates a real 3v3 Pokemon battle in a two-player format within the Python console. The game has two predetermined teams pitted against eachother. These teams consist of familiar faces, such as Charmander, Squirtle, Bulbasaur, Snorlax, Lapras, and Pikachu.
+#### Setup:
+Users are first prompted to enter their names. They are able to enter whatever they would like, as this enables freedom among trainers. Then, they are informed of their teams, and the pokemon within them. At this point, it is randomly selected who will go first. Their first pokemon is selected for them, but the matchup is a fair fight in respect to their elemental types.
+#### Gameplay:
+The pokemon within this game are fully-interactive complex classes with complex moves, each with their own special effects and abilities. Moves may set their enemies on fire, freeze them, put them to sleep, damage the user of the attack, and much, much more. The user is always informed on what is happening to their pokemon, and they are given clues as to what will be the result of their decisions, whether this be in the color in the console, the description of moves, or even the specialized messages within the console. Each pokemon will have underlying types that affect how enemy-moves interact with them. Pokemon also have a collection of moves with unique types, which dictate how moves will interact with enemies. Once pokemon within the game take too much damage, they are considered "fainted", and are able to switch to another pokemon on their team. They can also do this within the move-selection screen, to enable the users to use even more strategy to best their friends at this light-hearted, yet competitive turn-based game. Once all of the pokemon on a team are fainted, the remaining team's trainer is crowned the victor, with a celebratory message!
+### File Details:
+#### project.py:
+project.py is the main file that holds nearly-all gameplay logic. This tells the computer how to handle the initialization of the game, prompting the user, the gameplay itself, as well as what to do once the game is considered over. This file also holds functions, such as get_30, which returns True 30% of the time, and get_swap_list, which returns the list of available pokemon to swap to, given a pokemon to swap from.
+#### custom_library.py:
+custom_library.py is a custom library I made especially for this project, which contains the classes for the pokemon and moves, as well as a majority of the text-manipulating, such as colors, brightness, background, and strikethrough.
+### Design Choices:
+#### What Made It:
+My choice to have two predetermined-teams was for the purpose of simplifying the game for the users, as to reduce confusion and increase consistency. Type-bonuses play a very large role in the game, and thinking of games where teams could be heavily skewed on one side would lead to an unfair and, frankly annoying experience. Lastly, the scope of complexity of each and every move in the game allows for a hugely-variable number of outcomes. This also allows for a much more interesting experience for the two players.
+#### What Didn't:
+When first planning this project, I imagined health bars, sound-effects, and maybe even ASCII art depicting the pokemon themselves. However, this soon was realized to be un-necessary to creating competition between two friends. If this was a single player game, I believe that aspects like that would have been worth the time-result ratio. However, in this case, I believe that the game is great as a simplified version of the Pokemon game we all know and love.
